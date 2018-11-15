@@ -54,7 +54,7 @@ class InteractiveRecord
   end
   
   def self.find_by(att)
-    sql = "SELECT * FROM #{table_name} WHERE #{att.key} = '#{att}"
+    sql = "SELECT * FROM #{table_name} WHERE #{att.key} = '#{att}'"
     DB[:conn].execute(sql)
   end
     
