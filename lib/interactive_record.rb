@@ -36,5 +36,7 @@ class InteractiveRecord
     values = []
     col_names_for_insert.each do |col_name|
       values << "'#{send(col_name)}'"
+    end
+    values.join(', ')
   
 end
