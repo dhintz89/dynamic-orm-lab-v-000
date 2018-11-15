@@ -45,6 +45,6 @@ class InteractiveRecord
     
     DB[:conn].execute(sql)
     
-    self.id = "SELECT most_recent_rowid FROM #{table_name_for_insert}"
+    self.id = "SELECT last_insert_rowid FROM #{table_name_for_insert}"[0][0]
     
 end
