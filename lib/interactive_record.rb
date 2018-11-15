@@ -38,5 +38,6 @@ class InteractiveRecord
       values << "'#{send(col_name)}'"
     end
     values.join(', ')
+  end
   
 end
